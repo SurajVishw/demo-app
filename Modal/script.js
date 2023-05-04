@@ -5,7 +5,7 @@ let modalBox = document.querySelector('.modal');
 let modalOverlay = document.querySelector('.overlay');
 let closeBtn = document.querySelector('.close-modal');
 
-const modalClass = function () {
+const closeModal = function () {
   modalBox.classList.add('hidden');
   modalOverlay.classList.add('hidden');
 };
@@ -17,12 +17,8 @@ Array.from(modalOne).forEach(button => {
   });
 });
 
-closeBtn.addEventListener('click', () => {
-  modalClass();
-});
+closeBtn.addEventListener('click', closeModal);
 
-modalOverlay.addEventListener('click', () => {
-  modalClass();
-});
+modalOverlay.addEventListener('click', closeModal);
 
 // model created
