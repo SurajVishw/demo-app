@@ -24,3 +24,5 @@ closeBtn.addEventListener('click', () => {
 modalOverlay.addEventListener('click', () => {
   modalClass();
 });
+
+// model created
